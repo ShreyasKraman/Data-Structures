@@ -28,9 +28,10 @@ class Stack{
     }
 
     printItems(){
-        while(this.top!== -1){
-            console.log(this.stack[this.top]);
-            this.top--;
+        if(this.top!== -1){
+            this.stack.map(item => {
+                console.log(item);
+            });    
         }
     }
 
